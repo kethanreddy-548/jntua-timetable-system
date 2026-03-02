@@ -2,7 +2,6 @@
 import streamlit as st
 from database.db import fetchone, fetchall
 from auth.security import current_role, current_dept_id
-
 def show():
     role    = current_role()
     dept_id = current_dept_id()
